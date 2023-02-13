@@ -20,8 +20,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Material(
-      child: Center(
+    return const Scaffold(
+      body: Center(
         child: Text('Flutterando'),
       ),
     );
