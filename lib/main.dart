@@ -16,8 +16,10 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Flutterando'),
+    return Material(
+      child: Center(
+        child: Text('Flutterando'),
+      ),
     );
   }
 }
