@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_course_2022/home_controller.dart';
 
 import 'home_page.dart';
 
@@ -7,8 +8,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return MaterialApp(
+      home: HomeController(child: const HomePage()),
     );
   }
 }
