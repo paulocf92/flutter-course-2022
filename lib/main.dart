@@ -27,6 +27,12 @@ class HomePage extends StatelessWidget {
       body: const Center(
         child: Text('Flutterando'),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          print('Clicked');
+        },
+      ),
     );
   }
 }
