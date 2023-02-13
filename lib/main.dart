@@ -7,10 +7,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'Flutterando',
-        textDirection: TextDirection.ltr,
+    return MaterialApp(
+      home: Center(
+        child: Text('Flutterando'),
       ),
     );
   }
