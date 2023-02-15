@@ -22,16 +22,18 @@ class _MyHomePageState extends State<MyHomePage> {
         body: SizedBox(
             width: double.infinity,
             height: double.infinity,
-            child: Column(
-              children: [
-                for (var i = 0; i < 10; i++)
-                  Container(
-                    width: 80,
-                    height: 80,
-                    margin: const EdgeInsets.all(12),
-                    color: Colors.red,
-                  ),
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  for (var i = 0; i < 10; i++)
+                    Container(
+                      width: double.infinity,
+                      height: 80,
+                      margin: const EdgeInsets.all(8),
+                      color: Colors.red,
+                    ),
+                ],
+              ),
             )),
       ),
     );
