@@ -23,8 +23,8 @@ class _MyHomePageState extends State<MyHomePage> {
             width: double.infinity,
             height: double.infinity,
             child: Row(
-              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              // crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   width: 80,
