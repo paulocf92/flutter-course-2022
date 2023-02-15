@@ -12,8 +12,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final names = ['Joao', 'Maria', 'Joaquim', 'Paulo', 'Jacob', 'Fernando'];
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,18 +19,20 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Curso Flutter'),
         ),
-        body: SizedBox(
-          width: double.infinity,
-          height: double.infinity,
-          child: ListView.builder(
-            itemCount: names.length,
-            itemBuilder: (context, index) {
-              final name = names[index];
-              return ListTile(
-                title: Text(name),
-              );
-            },
-          ),
+        body: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  const Expanded(
+                    child: TextField(),
+                  ),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
