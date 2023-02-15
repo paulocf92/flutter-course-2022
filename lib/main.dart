@@ -20,21 +20,20 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text('Curso Flutter'),
         ),
         body: SizedBox(
-            width: double.infinity,
-            height: double.infinity,
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  for (var i = 0; i < 10; i++)
-                    Container(
-                      width: double.infinity,
-                      height: 80,
-                      margin: const EdgeInsets.all(8),
-                      color: Colors.red,
-                    ),
-                ],
-              ),
-            )),
+          width: double.infinity,
+          height: double.infinity,
+          child: ListView(
+            children: [
+              for (var i = 0; i < 10; i++)
+                Container(
+                  width: double.infinity,
+                  height: 80,
+                  margin: const EdgeInsets.all(8),
+                  color: Colors.red,
+                ),
+            ],
+          ),
+        ),
       ),
     );
   }
