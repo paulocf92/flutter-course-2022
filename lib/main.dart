@@ -21,6 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: SizedBox(
             width: double.infinity,
+            height: double.infinity,
             child: Row(
               // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               // crossAxisAlignment: CrossAxisAlignment.end,
