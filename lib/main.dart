@@ -20,6 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text('Curso Flutter'),
         ),
         body: Stack(
+          alignment: Alignment.center,
           children: [
             Container(
               color: Colors.red,
