@@ -21,9 +21,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: SizedBox(
             width: double.infinity,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.end,
+            child: Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              // crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Container(
                   width: 80,
