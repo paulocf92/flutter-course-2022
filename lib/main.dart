@@ -19,27 +19,29 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Curso Flutter'),
         ),
-        body: Center(
+        body: SizedBox(
+            width: double.infinity,
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Container(
-              width: 80,
-              height: 80,
-              color: Colors.red,
-            ),
-            Container(
-              width: 80,
-              height: 80,
-              color: Colors.blue,
-            ),
-            Container(
-              width: 80,
-              height: 80,
-              color: Colors.green,
-            ),
-          ],
-        )),
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Container(
+                  width: 80,
+                  height: 80,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 80,
+                  height: 80,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 80,
+                  height: 80,
+                  color: Colors.green,
+                ),
+              ],
+            )),
       ),
     );
   }
