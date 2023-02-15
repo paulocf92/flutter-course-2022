@@ -12,6 +12,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final list = <String>[];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +32,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
                 ],
+              ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: list.length,
+                itemBuilder: (context, index) {
+                  final item = list[index];
+                  return ListTile(title: Text(item));
+                },
               ),
             ),
           ],
