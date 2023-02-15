@@ -19,20 +19,22 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Curso Flutter'),
         ),
-        body: Stack(
-          alignment: Alignment.center,
-          children: [
-            Container(
-              color: Colors.red,
-              height: 100,
-              width: 100,
-            ),
-            Container(
-              color: Colors.blue,
-              height: 70,
-              width: 70,
-            ),
-          ],
+        body: Center(
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Container(
+                color: Colors.red,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 70,
+                width: 70,
+              ),
+            ],
+          ),
         ),
       ),
     );
