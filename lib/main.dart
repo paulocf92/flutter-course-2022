@@ -22,25 +22,15 @@ class _MyHomePageState extends State<MyHomePage> {
         body: SizedBox(
             width: double.infinity,
             height: double.infinity,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Column(
               children: [
-                Container(
-                  width: 80,
-                  height: 80,
-                  color: Colors.red,
-                ),
-                Container(
-                  width: 80,
-                  height: 80,
-                  color: Colors.blue,
-                ),
-                Container(
-                  width: 80,
-                  height: 80,
-                  color: Colors.green,
-                ),
+                for (var i = 0; i < 10; i++)
+                  Container(
+                    width: 80,
+                    height: 80,
+                    margin: const EdgeInsets.all(12),
+                    color: Colors.red,
+                  ),
               ],
             )),
       ),
