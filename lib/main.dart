@@ -12,6 +12,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final names = ['Joao', 'Maria', 'Joaquim', 'Paulo', 'Jacob', 'Fernando'];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,13 +25,11 @@ class _MyHomePageState extends State<MyHomePage> {
           width: double.infinity,
           height: double.infinity,
           child: ListView.builder(
-            itemCount: 10,
+            itemCount: names.length,
             itemBuilder: (context, index) {
-              return Container(
-                width: double.infinity,
-                height: 80,
-                margin: const EdgeInsets.all(8),
-                color: Colors.green,
+              final name = names[index];
+              return ListTile(
+                title: Text(name),
               );
             },
           ),
