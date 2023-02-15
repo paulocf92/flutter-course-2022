@@ -12,6 +12,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final controller = TextEditingController();
   final list = <String>[];
 
   @override
@@ -27,10 +28,20 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  const Expanded(
-                    child: TextField(),
+                  Expanded(
+                    child: TextField(
+                      controller: controller,
+                    ),
                   ),
-                  IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
+                  IconButton(
+                      onPressed: () {
+                        final text = controller.text;
+                        setState(() {
+                          list.add(text);
+                        });
+                        controller.clear();
+                      },
+                      icon: const Icon(Icons.add)),
                 ],
               ),
             ),
